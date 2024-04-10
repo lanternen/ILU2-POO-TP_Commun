@@ -26,7 +26,7 @@ class CalendrierAnnuelTest {
 	@Test
 	void testReserver() {
 		assertTrue(calendrier.reserver(20,10), "reservation du 20/10 devrait être possible");
-		assertFalse(calendrier.estLibre(20,10), "20/10 devrait être occuper");
+		assertFalse(calendrier.estLibre(20,10), "20/10 devrait être occupé");
 		assertFalse(calendrier.reserver(20,10), "reservation du 20/10 ne devrait pas être possible");
 	}
 
